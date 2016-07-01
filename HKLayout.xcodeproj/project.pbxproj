@@ -12,6 +12,8 @@
 		501D01F21D05E59900653285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D01F01D05E59900653285 /* Main.storyboard */; };
 		501D01F41D05E59900653285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501D01F31D05E59900653285 /* Assets.xcassets */; };
 		501D01F71D05E59900653285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D01F51D05E59900653285 /* LaunchScreen.storyboard */; };
+		50832E9C1D091A7000C63221 /* HKLayoutTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50832E9B1D091A7000C63221 /* HKLayoutTest.xib */; };
+		50FCF1C71D08090100233AAB /* UIView+HKLayoutExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCF1C61D08090100233AAB /* UIView+HKLayoutExts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		501D01F31D05E59900653285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501D01F61D05E59900653285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501D01F81D05E59900653285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50832E9B1D091A7000C63221 /* HKLayoutTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKLayoutTest.xib; sourceTree = "<group>"; };
+		50FCF1C61D08090100233AAB /* UIView+HKLayoutExts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+HKLayoutExts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		501D01EB1D05E59900653285 /* HKLayout */ = {
 			isa = PBXGroup;
 			children = (
+				50FCF1C31D0808E400233AAB /* sources */,
 				501D01EC1D05E59900653285 /* AppDelegate.swift */,
 				501D01EE1D05E59900653285 /* ViewController.swift */,
 				501D01F01D05E59900653285 /* Main.storyboard */,
 				501D01F31D05E59900653285 /* Assets.xcassets */,
 				501D01F51D05E59900653285 /* LaunchScreen.storyboard */,
 				501D01F81D05E59900653285 /* Info.plist */,
+				50832E9B1D091A7000C63221 /* HKLayoutTest.xib */,
 			);
 			path = HKLayout;
+			sourceTree = "<group>";
+		};
+		50FCF1C31D0808E400233AAB /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				50FCF1C61D08090100233AAB /* UIView+HKLayoutExts.swift */,
+			);
+			path = sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +138,7 @@
 			files = (
 				501D01F71D05E59900653285 /* LaunchScreen.storyboard in Resources */,
 				501D01F41D05E59900653285 /* Assets.xcassets in Resources */,
+				50832E9C1D091A7000C63221 /* HKLayoutTest.xib in Resources */,
 				501D01F21D05E59900653285 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				501D01EF1D05E59900653285 /* ViewController.swift in Sources */,
+				50FCF1C71D08090100233AAB /* UIView+HKLayoutExts.swift in Sources */,
 				501D01ED1D05E59900653285 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HKLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhk.ios.HKLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HKLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhk.ios.HKLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +304,7 @@
 				501D01FD1D05E59900653285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
